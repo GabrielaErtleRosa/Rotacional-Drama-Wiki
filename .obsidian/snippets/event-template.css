@@ -1,0 +1,55 @@
+.event-template .markdown-preview-sizer {
+    display: grid !important;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    align-items: start;
+    min-height: auto !important;
+
+    grid-template-areas:
+        "event-cover event-meta"
+        "event-description event-meta"
+        "event-gallery event-gallery";
+}
+
+.callout[data-callout="event-cover"] {
+    grid-area: event-cover;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.callout[data-callout="event-cover"] img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.callout[data-callout="event-cover"] > .callout-title {
+    display: none;
+}
+
+.callout[data-callout="event-meta"] {
+    grid-area: event-meta;
+    background: var(--background-secondary);
+    border-radius: 12px;
+}
+
+.callout[data-callout="event-description"] {
+    grid-area: event-description;
+    background: var(--background-secondary);
+    border-radius: 12px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.callout[data-callout="event-gallery"] {
+    grid-area: event-gallery;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 15px;
+}

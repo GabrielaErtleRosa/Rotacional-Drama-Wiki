@@ -1,0 +1,593 @@
+/* ===== picture ===== */
+.callout[data-callout="picture"]{
+    --callout-icon: user-round;
+    margin:0 !important;
+    padding:0 !important;
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+    border-radius: 0;
+}
+
+.callout[data-callout="picture"],
+.callout[data-callout="picture"] img{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    opacity:1 !important;
+    filter:none !important;
+    mix-blend-mode:normal !important;
+}
+
+.callout[data-callout="picture"] .callout-title,
+.callout[data-callout="picture"] .callout-icon > svg{
+    color:#A68AF9;
+}
+
+/* ===== sim-info ===== */
+
+.sim-template .dataview.table-view-table th {
+    border-bottom: 1px solid rgb(255, 255, 255) !important;
+    padding: 5px;
+    padding-bottom: 0px
+}
+
+.sim-template .dataview.table-view-table td {
+    padding: 10px;
+}
+
+.callout[data-callout="sim-info"]{
+    --callout-icon: file-user;
+}
+
+.callout[data-callout="sim-info"],
+.callout[data-callout="about"]{
+    background:var(--background-secondary);
+    border-radius: 10px;
+}
+
+.callout[data-callout="sim-info"] .callout-title,
+.callout[data-callout="sim-info"] .callout-icon > svg,
+.callout[data-callout="about"] .callout-icon > svg{
+    color:#DADADA;
+}
+
+/* ===================================================== */
+/* ===== GRID PRINCIPAL (ÚNICA definição no arquivo) ===== */
+/* ===================================================== */
+
+.sim-template .markdown-preview-sizer {
+    display: grid !important;
+    grid-template-columns: 300px minmax(300px, 500px) 500px;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: start;
+
+    grid-template-areas:
+        "sidebar-left properties sidebar-right"
+        "sidebar-left      tags    sidebar-right"
+        " important-events important-events sidebar-right";
+}
+
+/* properties */
+.sim-template .metadata-container {
+    grid-area: properties;
+}
+
+/* SIDEBAR-LEFT: picture + sim-info combinados, este bloco dita a altura da row 1 sozinho */
+.sim-template .el-div:has(.callout[data-callout="sidebar-left"]) {
+    align-self: start;
+    width: 300px;
+    grid-area: sidebar-left;
+}
+
+.callout[data-callout="sidebar-left"] .callout-content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background:none;
+}
+
+.callout[data-callout="sidebar-left"]{
+    padding:0 !important;
+    margin:0 !important;
+    background:none;
+}
+
+.callout[data-callout="sidebar-left"] > .callout-title{
+    display:none;
+}
+
+/* TAGS: row 2, coluna 2 — sem offset manual, a altura da row 1 já é ditada só por sidebar-left/metadata */
+.sim-template .el-div:has(.callout[data-callout="tags"]){
+    grid-area: tags;
+    align-self: start;
+    margin: 0;
+}
+/* SIDEBAR-RIGHT: sticky (fica no fluxo normal, não quebra o scroll da nota) + altura própria
+   limitada com scroll interno, pra não inflar as rows 2 e 3 */
+.sim-template .el-div:has(.callout[data-callout="sidebar-right"]) {
+    position: sticky;
+    top: 0;
+    grid-area: sidebar-right;
+    align-self: start;
+    width: 500px;
+    max-height: 95vh;
+    overflow-y: auto;
+    padding:0 !important;
+    margin:0 !important;
+    background: none;
+}
+
+.callout[data-callout="sidebar-right"] .callout-content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background: none;
+}
+
+.callout[data-callout="sidebar-right"]{
+    padding:0 !important;
+    margin:0 !important;
+    background: none;
+}
+
+.callout[data-callout="sidebar-right"] > .callout-title{
+    display: none;
+}
+
+/* IMPORTANT EVENTS: row 3, cols 1-2 — desce automaticamente, sem valor manual */
+.sim-template .el-pre:has(.round-gallery) {
+    grid-area: important-events;
+    width: 100%;
+    align-self: start;
+    margin: 0;
+}
+
+.sim-template .el-pre:has(.round-gallery) .round-gallery {
+    width: 100%;
+}
+
+.gallery-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+    font-size: 25px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.gallery-title-icon {
+    display: flex;
+    align-items: center;
+    color: #A68AF9;
+}
+
+.gallery-title-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+/* ===== limpeza ===== */
+.sim-template .markdown-preview-pusher,
+.sim-template .mod-footer{
+    display:none !important;
+}
+
+/* ===== death info ===== */
+
+.death-info{
+    background:rgb(24, 24, 24) !important;
+    border:2px solid #DADADA !important;
+    border-radius:10px;
+    padding:9px;
+}
+
+.death-info td,
+.death-info th{
+    padding:8px;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+}
+
+.sim-template .el-pre:has(.death-info){
+    justify-self:stretch;
+}
+
+.death-info:empty{
+    padding:0 !important;
+    margin:0 !important;
+    background:none !important;
+}
+
+/* ===== bio  ===== */
+
+.callout[data-callout="biography"]{
+    background: #d4b2ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    opacity: 70%;
+}
+
+.callout[data-callout="biography"] p{
+    color: var(--background-primary);
+    font-weight: 600;
+}
+
+.callout[data-callout="biography"] .callout-title{
+    color: var(--background-primary);
+    border-bottom: 1px solid var(--background-primary);
+    padding-bottom: 6px;
+}
+
+.callout[data-callout="biography"] .callout-title-inner{
+    font-weight: 700 !important;
+}
+
+.callout[data-callout="biography"] .callout-icon > svg{
+    color: var(--background-primary);
+}
+
+/* ===== about  ===== */
+
+.callout[data-callout="about"] .callout-title{
+    color: #DADADA;
+    font-size: large;
+}
+
+.callout[data-callout="about"]{
+    --callout-icon: book-open;
+}
+
+/* ===== goals  ===== */
+
+.callout[data-callout="goals"]{
+    --callout-color: 166, 138, 249;
+    --callout-icon: heart;
+    border-radius: 10px;
+}
+
+/* ===== sim photo gallery ===== */
+
+.callout[data-callout="sim-gallery"] {
+    --callout-icon: camera;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.15);
+}
+
+.callout[data-callout="sim-gallery"] .callout-title {
+    color: #A68AF9;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.callout[data-callout="sim-gallery"] .callout-icon > svg {
+    color: #A68AF9;
+}
+
+.sim-photo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background:rgba(255, 255, 255, 0.05) ;
+    border-radius: 10PX;
+    padding: 10px;
+}
+
+.gallery-add-btn {
+    background: transparent;
+    border: 1px solid #A68AF9;
+    color: #A68AF9;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.gallery-add-btn:hover {
+    background: rgba(166, 138, 249, 0.3);
+}
+
+.sim-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sim-photo-grid::before {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 90;
+    color: rgba(255, 255, 255, 0.5);
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    order: 999;
+}
+
+.sim-photo-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.sim-photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.sim-photo-card:hover img {
+    transform: scale(1.05);
+}
+
+.sim-photo-card[draggable="true"] {
+    cursor: grab;
+}
+
+.sim-photo-card.dragging {
+    opacity: 0.4;
+    cursor: grabbing;
+}
+
+.sim-photo-card.drag-over {
+    outline: 2px solid #A68AF9;
+    outline-offset: 2px;
+}
+
+.photo-delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sim-photo-card:hover .photo-delete-btn {
+    opacity: 1;
+}
+
+/* modal de input */
+.gallery-modal-input {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.gallery-modal-box {
+    background: var(--background-secondary);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 280px;
+}
+
+.gallery-input {
+    background: var(--background-primary);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 8px;
+    color: var(--text-normal);
+    font-size: 14px;
+}
+
+.gallery-modal-btns {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.gallery-confirm, .gallery-cancel {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.gallery-confirm {
+    background: #A68AF9;
+    color: white;
+}
+
+.gallery-cancel {
+    background: rgba(255,255,255,0.1);
+    color: var(--text-normal);
+}
+
+/* fullscreen */
+.gallery-fullscreen-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.gallery-fullscreen-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.gallery-fullscreen-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ===== related sims ===== */
+
+.callout[data-callout="related-sims"] .callout-icon { display: none; }
+.callout[data-callout="related-sims"] .callout-title::before { content: "👥"; margin-right: 6px; }
+.callout[data-callout="related-sims"] {
+    background: var(--background-secondary);
+    border-radius: 10px;
+}
+
+.callout[data-callout="related-sims"] .callout-title {
+    color: #A68AF9;
+}
+
+.callout[data-callout="related-sims"] .callout-icon svg {
+    color: #A68AF9;
+}
+
+.related-sims-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.related-sim-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 8px;
+    background: var(--background-primary);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.related-sim-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(166, 138, 249, 0.4);
+}
+
+.related-sim-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.related-sim-no-pic {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+}
+
+.related-sim-name {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    color: var(--text-normal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.family-tree-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.family-tree-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-normal);
+}
+
+.family-tree-title svg {
+    width: 16px;
+    height: 16px;
+}
+
+.family-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.family-tag-pill {
+    background: rgba(166, 138, 249, 0.15);
+    border: 1px solid rgba(166, 138, 249, 0.4);
+    color: #A68AF9;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+/* ===== tags ===== */
+
+.sim-template .callout[data-callout="tags"] {
+    --callout-color: 166, 138, 249;
+    background: none;
+    --callout-icon: hash;
+    padding: 4px 8px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.sim-template .callout[data-callout="tags"] .callout-title {
+    font-size: 16px;
+    padding: 0;
+}
+
+.sim-template .callout[data-callout="tags"] .callout-content {
+    padding: 0px 0 0 0;
+}
+
+.sim-template .callout[data-callout="tags"] .callout-icon svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* ===== help =====
+.markdown-preview-sizer > *{
+    outline:2px solid red !important;
+}
+
+.sim-template .el-pre{
+    outline:3px solid lime !important;
+}
+*/

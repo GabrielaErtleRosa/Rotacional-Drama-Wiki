@@ -1,0 +1,11 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Born Roud": "number",
+    "Round of Death": "number",
+    "adopted": "checkbox",
+    "Premade": "checkbox"
+  }
+}

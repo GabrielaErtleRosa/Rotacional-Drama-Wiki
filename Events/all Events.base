@@ -1,0 +1,12 @@
+filters:
+  and:
+    - fileClass == "EventClass"
+    - file.name != "Event Template"
+views:
+  - type: cards
+    name: Visualizaçao padrão
+    order:
+      - file.name
+      - file.basename
+    cardSize: 310
+    imageAspectRatio: 1.25

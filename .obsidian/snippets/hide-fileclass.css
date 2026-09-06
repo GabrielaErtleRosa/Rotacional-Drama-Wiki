@@ -1,0 +1,49 @@
+/* Esconde a propriedade do metadata */
+
+.metadata-property[data-property-key="class"],
+.metadata-property[data-property-key="fileclass"],
+.metadata-property[data-property-key="fileClass"],
+.metadata-property[data-property-key="banner"],
+.metadata-property[data-property-key="banner-fade"],
+.metadata-property[data-property-key="banner-height"],
+.metadata-property[data-property-key="icon-height"],
+.metadata-property[data-property-key="icon-image"],
+.metadata-property[data-property-key="banner-icon-image-alignment"],
+.metadata-property[data-property-key="icon-x"],
+.metadata-property[data-property-key="icon-size"],
+.metadata-property[data-property-key="icon-y"],
+.metadata-property[data-property-key="icon-image-size-multiplier"],
+.metadata-property[data-property-key="cssclasses"],
+.metadata-property[data-property-key="gallery"]
+{
+    display: none !important;
+}
+
+/* deletar propriedades padrão:
+
+.metadata-property:has(
+    .metadata-property-key-input[aria-label="HouseHold"],
+    .metadata-property-key-input[aria-label="Parents"]
+
+){
+    display: none
+}
+/*/
+
+.markdown-reading-view .metadata-property:has(
+    [aria-label="HouseHold"],
+    [aria-label="Sibling (s)"],
+    [aria-label="Step Sibling (s)"],
+    [aria-label="Parents"],
+    [aria-label="Adoptive Parents"],
+    [aria-label="Epitaph"],
+    [aria-label="Death Round"],
+    [aria-label="Death By"]
+){
+    display:none !important;
+}
+
+.dataview.small-text{
+    display:none !important;
+}
+

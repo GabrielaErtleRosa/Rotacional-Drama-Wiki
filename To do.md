@@ -1,0 +1,11 @@
+
+- [ ] family connections
+- [ ] lineage
+- [ ] hashtags - generation, income, lineage, single 
+- [ ] round statistics
+- [ ] random name(by letter)/scenario/aspiration generator
+- [ ] age up tracker by round
+- [ ] matchmaking table by generation
+- [x] premade check-box
+- [ ] Templates "create goth"
+- [ ] all rounds dashboard
