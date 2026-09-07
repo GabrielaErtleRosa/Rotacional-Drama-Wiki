@@ -6,9 +6,6 @@
     width: 100% !important;
     min-height: auto !important;
     align-items: start;
-    align-content: start;
-    overflow-anchor: none !important;
-    contain: layout !important;
 
     grid-template-areas:
         "properties properties"
@@ -17,12 +14,11 @@
 }
 
 .event-template .mod-header {
-    grid-area: properties;
-    width: 100% !important;
-    margin: 0 !important;
+    display: contents;
 }
 
 .event-template .metadata-container {
+    grid-area: properties;
     width: 100% !important;
     margin: 0 !important;
 }
