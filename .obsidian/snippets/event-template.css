@@ -18,7 +18,6 @@
 }
 
 .event-template .metadata-container {
-    max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
 }
@@ -26,7 +25,6 @@
 /* ===== COVER ===== */
 .event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
-    width: 100%;
 }
 
 .callout[data-callout="event-cover"] {
