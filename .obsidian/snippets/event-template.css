@@ -7,8 +7,7 @@
     min-height: auto !important;
 
     grid-template-areas:
-        "event-cover event-meta"
-        "event-description event-meta"
+        "event-cover event-description"
         "event-gallery event-gallery";
 }
 
@@ -22,7 +21,7 @@
 }
 
 .callout[data-callout="event-cover"] img {
-    width: 100%;
+    width: 50%;
     height: 380px;
     object-fit: cover;
     border-radius: 16px;
@@ -32,11 +31,6 @@
     display: none;
 }
 
-.callout[data-callout="event-meta"] {
-    grid-area: event-meta;
-    background: var(--background-secondary);
-    border-radius: 12px;
-}
 
 .callout[data-callout="event-description"] {
     grid-area: event-description;
