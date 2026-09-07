@@ -23,6 +23,7 @@
 }
 
 .event-template .metadata-container {
+    grid-area: properties;
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
