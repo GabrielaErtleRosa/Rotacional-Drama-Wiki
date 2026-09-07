@@ -6,9 +6,9 @@ cover:
 Round:
 tags:
   - Wedding
-gallery: []
+gallery:
+  - Captura de Tela (8).png
 cssclasses:
-  - event-template
 ---
 
 > [!event-cover]
