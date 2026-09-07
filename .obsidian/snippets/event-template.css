@@ -6,13 +6,14 @@
     min-height: auto !important;
 
     grid-template-areas:
-        ""
+        " properties "
         "event-cover event-description"
         "event-gallery event-gallery";
 }
 
-.sim-template .metadata-container {
+.event-template .metadata-container {
     grid-area: properties;
+    
 }
 
 .callout[data-callout="event-cover"] {
