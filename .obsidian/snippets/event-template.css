@@ -1,8 +1,11 @@
 .event-template .markdown-preview-sizer {
     display: grid !important;
+    grid-template-columns: 2fr 350px;
     grid-template-rows: auto auto auto;
     gap: 20px;
     width: 100% !important;
+    overflow-anchor: none !important;
+    contain: layout !important;
 
     grid-template-areas:
         "properties properties"
@@ -15,6 +18,7 @@
     grid-area: properties;
     width: 100% !important;
     margin: 0 !important;
+    position: relative !important;
 }
 
 .event-template .metadata-container {
