@@ -1,15 +1,5 @@
 .event-template .markdown-preview-sizer {
-    display: grid !important;
-    grid-template-columns: 1fr 350px;
-    grid-template-rows: auto auto;
-    gap: 24px;
-    align-items: start;
-    min-height: auto !important;
-
-    grid-template-areas:
-        "event-cover event-meta"
-        "event-description event-meta"
-        "event-gallery event-gallery";
+   
 }
 
 .callout[data-callout="event-cover"] {
