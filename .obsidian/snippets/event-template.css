@@ -4,6 +4,9 @@
     grid-template-rows: auto auto auto;
     gap: 20px;
     width: 100% !important;
+    min-height: auto !important;
+    align-items: start;
+    align-content: start;
     overflow-anchor: none !important;
     contain: layout !important;
 
@@ -13,12 +16,10 @@
         "event-gallery event-gallery";
 }
 
-/* properties (metadata do Obsidian) */
 .event-template .mod-header {
     grid-area: properties;
     width: 100% !important;
     margin: 0 !important;
-    position: relative !important;
 }
 
 .event-template .metadata-container {
@@ -26,7 +27,6 @@
     margin: 0 !important;
 }
 
-/* ===== COVER ===== */
 .event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
 }
@@ -50,7 +50,6 @@
     display: none;
 }
 
-/* ===== DESCRIPTION ===== */
 .event-template .el-div:has(.callout[data-callout="event-description"]) {
     grid-area: event-description;
     width: 100%;
@@ -64,7 +63,6 @@
     line-height: 1.6;
 }
 
-/* ===== GALLERY ===== */
 .event-template .el-div:has(.callout[data-callout="event-gallery"]) {
     grid-area: event-gallery;
     width: 100%;
