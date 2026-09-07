@@ -20,14 +20,9 @@
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
-    position: static !important;
-    overflow: visible !important;
-    contain: none !important;
-    height: auto !important;
 }
 
 .event-template .metadata-container {
-    grid-area: properties;
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
