@@ -6,7 +6,7 @@
     min-height: auto !important;
 
     grid-template-areas:
-        " properties "
+        " properties properties "
         "event-cover event-description"
         "event-gallery event-gallery";
 }
