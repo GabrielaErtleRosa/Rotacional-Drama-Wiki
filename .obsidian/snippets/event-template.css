@@ -17,11 +17,16 @@
 /* properties (metadata do Obsidian) */
 .event-template .metadata-container {
     grid-area: properties;
+    
 }
 
-/* cover */
-.callout[data-callout="event-cover"] {
+/* ===== COVER ===== */
+.event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
+    width: 100%;
+}
+
+.callout[data-callout="event-cover"] {
     padding: 0 !important;
     margin: 0 !important;
     background: none !important;
@@ -40,9 +45,13 @@
     display: none;
 }
 
-/* description */
-.callout[data-callout="event-description"] {
+/* ===== DESCRIPTION ===== */
+.event-template .el-div:has(.callout[data-callout="event-description"]) {
     grid-area: event-description;
+    width: 100%;
+}
+
+.callout[data-callout="event-description"] {
     background: var(--background-secondary);
     border-radius: 12px;
     font-family: Georgia, serif;
@@ -50,9 +59,13 @@
     line-height: 1.6;
 }
 
-/* gallery */
-.callout[data-callout="event-gallery"] {
+/* ===== GALLERY ===== */
+.event-template .el-div:has(.callout[data-callout="event-gallery"]) {
     grid-area: event-gallery;
+    width: 100%;
+}
+
+.callout[data-callout="event-gallery"] {
     background: none;
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 15px;
