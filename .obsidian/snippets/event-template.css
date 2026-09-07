@@ -1,13 +1,10 @@
 .event-template .markdown-preview-sizer {
     display: grid !important;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 2fr 350px;
     grid-template-rows: auto auto auto;
-    gap: 24px;
+    gap: 20px;
+    min-height: auto;
     align-items: start;
-    min-height: auto !important;
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
 
     grid-template-areas:
         "properties properties"
