@@ -15,8 +15,14 @@
 }
 
 /* properties (metadata do Obsidian) */
-.event-template .metadata-container {
+.event-template .mod-header {
     grid-area: properties;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.event-template .metadata-container {
     max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
