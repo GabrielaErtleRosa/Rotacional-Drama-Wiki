@@ -1,21 +1,23 @@
 .event-template .markdown-preview-sizer {
     display: grid !important;
     grid-template-columns: 1fr 350px;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     gap: 24px;
+    align-items: start;
     min-height: auto !important;
 
     grid-template-areas:
-        " properties properties "
+        "properties properties"
         "event-cover event-description"
         "event-gallery event-gallery";
 }
 
+/* properties (metadata do Obsidian) */
 .event-template .metadata-container {
     grid-area: properties;
-    
 }
 
+/* cover */
 .callout[data-callout="event-cover"] {
     grid-area: event-cover;
     padding: 0 !important;
@@ -36,7 +38,7 @@
     display: none;
 }
 
-
+/* description */
 .callout[data-callout="event-description"] {
     grid-area: event-description;
     background: var(--background-secondary);
@@ -46,10 +48,10 @@
     line-height: 1.6;
 }
 
+/* gallery */
 .callout[data-callout="event-gallery"] {
     grid-area: event-gallery;
     background: none;
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 15px;
 }
-
