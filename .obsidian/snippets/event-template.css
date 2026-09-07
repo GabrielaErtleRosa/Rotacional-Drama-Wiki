@@ -5,6 +5,9 @@
     gap: 24px;
     align-items: start;
     min-height: auto !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
 
     grid-template-areas:
         "properties properties"
