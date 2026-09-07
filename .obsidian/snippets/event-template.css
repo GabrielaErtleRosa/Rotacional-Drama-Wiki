@@ -2,10 +2,7 @@
     display: grid !important;
     grid-template-rows: auto auto auto;
     gap: 20px;
-    min-height: auto !important;
-    max-width: none !important;
     width: 100% !important;
-    overflow-anchor: none !important;
 
     grid-template-areas:
         "properties properties"
@@ -16,7 +13,6 @@
 /* properties (metadata do Obsidian) */
 .event-template .mod-header {
     grid-area: properties;
-    max-width: none !important;
     width: 100% !important;
     margin: 0 !important;
 }
