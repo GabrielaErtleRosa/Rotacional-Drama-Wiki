@@ -1,5 +1,11 @@
 .event-template .markdown-preview-sizer {
-   
+    display: grid !important;
+    gap: 24px;
+
+    grid-template-areas:
+        "event-cover event-meta"
+        "event-description event-meta"
+        "event-gallery event-gallery";
 }
 
 .callout[data-callout="event-cover"] {
@@ -12,7 +18,7 @@
 }
 
 .callout[data-callout="event-cover"] img {
-    width: 100%;
+    width: 50%;
     height: 380px;
     object-fit: cover;
     border-radius: 16px;

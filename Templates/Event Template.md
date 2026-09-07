@@ -14,25 +14,6 @@ cssclasses:
 > [!event-cover]
 > ![[BellaGoth.png]]
 
-> [!event-meta]
-> ```dataviewjs
-> const file = app.workspace.getActiveFile();
-> const ev = dv.page(file?.path);
-> dv.container.empty();
->
-> if (!ev) {
->     dv.paragraph("⏳ carregando...");
-> } else {
->     dv.table(
->         [" ", " "],
->         [
->             ["Round", ev.Round ? dv.fileLink(ev.Round.path) : "None"],
->             ["Participants", ev.Participants?.map(p => dv.fileLink(p.path)) ?? "None"],
->             ["Tags", (ev.file.tags ?? []).join(", ") || "None"]
->         ]
->     );
-> }
-> ```
 
 > [!event-description]
 > ```dataviewjs
