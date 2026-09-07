@@ -39,8 +39,8 @@ Ex (s):
   - "[[Gina Goth]]"
   - "[[Don Lothario]]"
   - "[[Bella Goth]]"
-Adopted: false
-Deceased: false
+Adopted: true
+Deceased: true
 Epitaph:
 HouseHold: "[[BFF]]"
 Step Sibling (s):
