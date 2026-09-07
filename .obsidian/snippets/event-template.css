@@ -3,7 +3,9 @@
     grid-template-columns: 2fr 350px;
     grid-template-rows: auto auto auto;
     gap: 20px;
-    min-height: auto;
+    min-height: auto !important;
+    max-width: none !important;
+    width: 100% !important;
     align-items: start;
 
     grid-template-areas:
