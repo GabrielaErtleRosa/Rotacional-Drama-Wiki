@@ -46,7 +46,6 @@
 /* DESCRIPTION */
 .event-template .el-div:has(.callout[data-callout="event-description"]) {
     grid-area: event-description;
-    align-self: ;
     width: 100%;
 }
 
