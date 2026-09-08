@@ -21,7 +21,7 @@
 .event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
     align-self: start;
-    width: 100%;
+    width: 70%;
 }
 
 .callout[data-callout="event-cover"] {
@@ -46,7 +46,7 @@
 /* DESCRIPTION */
 .event-template .el-div:has(.callout[data-callout="event-description"]) {
     grid-area: event-description;
-    align-self: start;
+    align-self: ;
     width: 100%;
 }
 
