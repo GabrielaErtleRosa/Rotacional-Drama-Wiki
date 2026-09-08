@@ -6,9 +6,8 @@
     width: 100% !important;
     min-height: auto !important;
     align-items: start;
-    align-content: start;
     overflow-anchor: none !important;
-    contain: layout !important;
+    /* contain: layout !important;  <-- REMOVIDO, provável causa do bug */
 
     grid-template-areas:
         "properties properties"
