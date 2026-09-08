@@ -9,3 +9,4 @@
 - [x] premade check-box
 - [ ] Templates "create goth"
 - [ ] all rounds dashboard
+- [ ] foto preto e branca ao acio
