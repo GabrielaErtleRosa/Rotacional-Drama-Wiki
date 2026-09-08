@@ -12,9 +12,12 @@
         "event-gallery event-gallery";
 }
 
-/* properties — igual ao sim-template, sem tocar em .mod-header */
+/* properties  */
 .event-template .metadata-container {
     grid-area: properties;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 /* COVER */
