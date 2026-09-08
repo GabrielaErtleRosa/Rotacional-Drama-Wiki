@@ -22,6 +22,10 @@
     margin: 0 !important;
 }
 
+.event-template .mod-header {
+    display: none;
+}
+
 /* COVER */
 .event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
