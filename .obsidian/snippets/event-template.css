@@ -3,11 +3,8 @@
     grid-template-columns: 2fr 350px;
     grid-template-rows: auto auto auto;
     gap: 20px;
-    width: 100% !important;
     min-height: auto !important;
     align-items: start;
-    overflow-anchor: none !important;
-    /* contain: layout !important;  <-- REMOVIDO, provável causa do bug */
 
     grid-template-areas:
         "properties properties"
@@ -15,19 +12,16 @@
         "event-gallery event-gallery";
 }
 
-.event-template .mod-header {
-    grid-area: properties;
-    width: 100% !important;
-    margin: 0 !important;
-}
-
+/* properties — igual ao sim-template, sem tocar em .mod-header */
 .event-template .metadata-container {
-    width: 100% !important;
-    margin: 0 !important;
+    grid-area: properties;
 }
 
+/* COVER */
 .event-template .el-div:has(.callout[data-callout="event-cover"]) {
     grid-area: event-cover;
+    align-self: start;
+    width: 100%;
 }
 
 .callout[data-callout="event-cover"] {
@@ -49,8 +43,10 @@
     display: none;
 }
 
+/* DESCRIPTION */
 .event-template .el-div:has(.callout[data-callout="event-description"]) {
     grid-area: event-description;
+    align-self: start;
     width: 100%;
 }
 
@@ -62,8 +58,10 @@
     line-height: 1.6;
 }
 
+/* GALLERY */
 .event-template .el-div:has(.callout[data-callout="event-gallery"]) {
     grid-area: event-gallery;
+    align-self: start;
     width: 100%;
 }
 

@@ -11,9 +11,6 @@ cssclasses:
   - event-template
 ---
 
-```dataviewjs
-const sizer = dv.container.closest(".markdown-preview-sizer"); const resetMinHeight = () => { if (sizer) sizer.style.minHeight = "auto"; }; resetMinHeight(); const bodyObserver = new MutationObserver(resetMinHeight); bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["class"] }); 
-```
 
 > [!event-cover]
 > ![[BellaGoth.png]]
