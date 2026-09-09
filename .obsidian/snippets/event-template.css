@@ -13,14 +13,6 @@
 }
 
 /* properties  */
-.event-template .metadata-container {
-    grid-area: properties;
-    grid-column: 1 / 3;
-    container-type: normal !important;
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-}
 
 .event-template .mod-header {
     display: none;
