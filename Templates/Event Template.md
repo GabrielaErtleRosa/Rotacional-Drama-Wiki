@@ -7,6 +7,7 @@ Round:
 tags:
   - Wedding
 gallery:
+  - Captura de tela 2026-09-08 131659.png
 cssclasses:
   - event-template
 ---
