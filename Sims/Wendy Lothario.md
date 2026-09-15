@@ -31,11 +31,11 @@ Step Sibling (s):
 Sibling (s):
 Parents:
   - "[[Bella Goth]]"
-Adoptive Parents: 
+Adoptive Parents:
 cssclasses:
   - sim-template
-Death Round: 
-Death By: 
+Death Round:
+Death By:
 gallery:
   - Captura de Tela (8).png
 picture: "[[AvatarDefault.png]]"
@@ -214,6 +214,8 @@ picture: "[[AvatarDefault.png]]"
 >
 >> [!about]
 >> - Lovesthe
+>
+>
 >> - 
 >> -  
 >> - 
