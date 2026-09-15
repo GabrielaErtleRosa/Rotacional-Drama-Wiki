@@ -213,11 +213,11 @@ picture: "[[AvatarDefault.png]]"
 >
 >
 >> [!about]
->> - Loves fishing
->> - LALA
->> -  Afraid of ghosts
->> - Favorite color: blue
->> - Always carries a notebook
+>> - Lovesthe
+>> - 
+>> -  
+>> - 
+>> - 
 >
 >> [!Goals]  
 >>   - revenge
