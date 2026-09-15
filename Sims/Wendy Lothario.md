@@ -204,12 +204,12 @@ picture: "[[AvatarDefault.png]]"
 > ```
 >
 >> [!Biography]
-> >um dia
-> >LALA
-> >scrr o
-> >aa
+> >Wendy always dreamed of building a big happy f
+> >
+> >
+> >
 >>
-> >yee
+> >
 >
 >
 >> [!about]
