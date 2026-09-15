@@ -204,7 +204,7 @@ picture: "[[AvatarDefault.png]]"
 > ```
 >
 >> [!Biography]
-> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard
+> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard, having 
 > >
 > >
 > >
