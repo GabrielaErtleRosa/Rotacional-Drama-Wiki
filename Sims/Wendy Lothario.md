@@ -204,7 +204,7 @@ picture: "[[AvatarDefault.png]]"
 > ```
 >
 >> [!Biography]
-> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard, having two toxic ex's, raising the children of one of them with another woman, been enem
+> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard, having two toxic ex's, raising the children of one of them with another woman, been enemies with her twin brother all her life. Despite the assault allegations, she still has some hope!
 > >
 > >
 > >
