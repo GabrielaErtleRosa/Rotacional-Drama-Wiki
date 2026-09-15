@@ -1,16 +1,14 @@
 ---
 Gender: Female
 Premade: false
-Generation:
+Generation: "2"
 Born Round: "[[Round 2]]"
 Natural From: "[[Worlds/Sem título]]"
 Current Living: "[[Worlds/Sem título]]"
-Life Stage: Baby
+Life Stage: Adult
 Career:
-  - Secret Agent
-  - Cook
-Core Aspiration: Comida
-Aspiration: Rei/Rainha das Travessuras
+Core Aspiration: Amor
+Aspiration: 
 Traits:
   - "Pateta "
   - "Glutão "
