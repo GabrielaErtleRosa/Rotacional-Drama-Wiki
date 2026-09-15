@@ -204,7 +204,7 @@ picture: "[[AvatarDefault.png]]"
 > ```
 >
 >> [!Biography]
-> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard, having 
+> >Wendy always dreamed of building a big happy family of her own, just like her parents did. Unfortunately she found herself quite unlucky at this regard, having two toxic ex's, raising the children of one of them with another woman, been enem
 > >
 > >
 > >
