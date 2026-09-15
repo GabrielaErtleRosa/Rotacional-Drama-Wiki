@@ -12,21 +12,10 @@ Aspiration:
 Traits:
 Sexuality:
   - Straight
-Partner: "[[J Huntington]]"
+Partner:
 fileClass: CharacterClass
 Children:
-  - "[[Summer]]"
-  - "[[lol]]"
-  - "[[Regina]]"
-  - "[[Travis Scott]]"
-  - "[[Jhonny]]"
-  - "[[J Huntington]]"
-  - "[[Helena Landgraab]]"
-  - "[[Gina Goth]]"
-  - "[[Don Lothario]]"
-  - "[[Bella Goth]]"
 Friends:
-  - "[[Gina Goth]]"
 Ex (s):
   - "[[J Huntington]]"
   - "[[Kurt Pancakes]]"
@@ -34,41 +23,19 @@ Ex (s):
   - "[[Gina Goth]]"
   - "[[Don Lothario]]"
   - "[[Bella Goth]]"
-Adopted: true
-Deceased: true
+Adopted: false
+Deceased: false
 Epitaph:
 HouseHold: "[[BFF]]"
 Step Sibling (s):
-  - "[[Travis Scott]]"
-  - "[[Don Lothario]]"
-  - "[[Regina]]"
-  - "[[J Huntington]]"
-  - "[[Helena Landgraab]]"
-  - "[[Gina Goth]]"
-  - "[[Kurt Pancakes]]"
-  - "[[Jhonny]]"
-  - "[[Summer]]"
 Sibling (s):
-  - "[[Bella Goth]]"
-  - "[[Bailey Richards]]"
-  - "[[Kurt Pancakes]]"
-  - "[[Summer]]"
-  - "[[Travis Scott]]"
-  - "[[Regina]]"
-  - "[[Helena Landgraab]]"
-  - "[[Gina Goth]]"
-  - "[[Don Lothario]]"
-  - "[[Jhonny]]"
 Parents:
   - "[[Bella Goth]]"
-  - "[[J Huntington]]"
-Adoptive Parents:
-  - "[[lol]]"
-  - "[[Regina]]"
+Adoptive Parents: 
 cssclasses:
   - sim-template
-Death Round: "[[Round 2]]"
-Death By: Drowning
+Death Round: 
+Death By: 
 gallery:
   - Captura de Tela (8).png
 picture: "[[AvatarDefault.png]]"
