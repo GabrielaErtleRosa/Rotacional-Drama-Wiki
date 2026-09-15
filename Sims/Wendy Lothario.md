@@ -8,13 +8,10 @@ Current Living: "[[Worlds/Sem título]]"
 Life Stage: Adult
 Career:
 Core Aspiration: Amor
-Aspiration: 
+Aspiration:
 Traits:
-  - "Pateta "
-  - "Glutão "
-  - "Romântico "
 Sexuality:
-  - Bissexual
+  - Straight
 Partner: "[[J Huntington]]"
 fileClass: CharacterClass
 Children:

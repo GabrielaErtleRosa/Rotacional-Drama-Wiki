@@ -10,3 +10,4 @@
 - [ ] Templates "create goth"
 - [ ] all rounds dashboard
 - [ ] foto preto e branca ao acionar deathbox
+- [ ] sexuality single select
