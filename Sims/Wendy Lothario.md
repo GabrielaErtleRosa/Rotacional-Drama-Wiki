@@ -213,18 +213,20 @@ picture: "[[AvatarDefault.png]]"
 >
 >
 >> [!about]
->> - Lovesthe
->
->
->> - 
->> -  
->> - 
->> - 
+>> - Loves the violin
+>> - Is a triplet
+>> - Raises the children of her dead ex husband with his second wife
+>> - Never had a child of her own
+>> - Hates her brother Hector for as long as she can remember, witch she got in fights with constantly until she could move away from him
+>> - People speculate she assaulted her ex husband Zack Zest
+>> 
+>> 
+>> 
 >
 >> [!Goals]  
->>   - revenge
->>   - omg
->>   - ev
+>>   - Become a great artist
+>>   - Never sign  the divorce papers
+>>   - Find the love
 >>   
 >>   
 >
