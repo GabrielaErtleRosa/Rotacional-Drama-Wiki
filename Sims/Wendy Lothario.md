@@ -6,7 +6,7 @@ Born Round: "[[Round 2]]"
 Natural From: "[[Worlds/Sem título]]"
 Current Living: "[[Worlds/Sem título]]"
 Life Stage: Adult
-Career:
+Career: [Secret Agent]
 Core Aspiration: Amor
 Aspiration: Amiga do Mundo
 Traits:
