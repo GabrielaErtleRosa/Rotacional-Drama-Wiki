@@ -8,6 +8,7 @@ Current Living: "[[Worlds/Sem título]]"
 Life Stage: Adult
 Career: [Secret Agent]
 Core Aspiration: Amor
+Aspiration:: 
 Aspiration: Amiga do Mundo
 Traits:
 Sexuality:
