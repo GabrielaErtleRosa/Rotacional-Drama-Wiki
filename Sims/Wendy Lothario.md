@@ -10,7 +10,6 @@ Career:
 Core Aspiration: Amor
 Aspiration:
 Traits:
-  - "Romântico "
 Sexuality:
   - Straight
 Partner:
