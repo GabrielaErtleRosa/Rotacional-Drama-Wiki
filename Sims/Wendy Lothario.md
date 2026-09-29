@@ -12,7 +12,8 @@ Aspiration: Amiga do Mundo
 Traits:
 Sexuality:
   - Straight
-Partner:
+Partner: 
+Partner:: 
 fileClass: CharacterClass
 Children:
 Friends:
